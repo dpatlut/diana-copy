@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Shop</title>
+</head>
+<body>
+  <h1>Welcome to Cookie Shop</h1>
+  <h3>We have:</h3>
+  <ul>
+    <% cookies.forEach(function(cookie){ %>
+    <li>
+      <h4>Cookie <%= cookie.id %> is named <%= cookie.name%></h4>
+      <h4>We have <%= cookie.quantity%> of them.</h4>
+      <br>
+      <img src="<%= cookie.image%>" style="height:200px">
+    </li>
+
+    <% }) %>
+  </ul>
+</body>
+</html>

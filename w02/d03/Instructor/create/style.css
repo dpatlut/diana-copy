@@ -1,0 +1,11 @@
+.container{
+	width: 400px;
+}
+
+.box{
+	width: 100px;
+	height: 100px;
+	background: red;
+	display: inline-block;
+	margin: 10px;
+}

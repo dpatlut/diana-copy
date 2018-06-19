@@ -1,0 +1,13 @@
+.container{
+	width: 850px;
+}
+
+.box{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 10px;
+	background: red;
+	vertical-align:top;
+	text-align: center;
+}

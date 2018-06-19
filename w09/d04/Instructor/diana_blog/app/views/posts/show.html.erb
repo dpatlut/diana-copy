@@ -1,0 +1,17 @@
+<h2><%= @post.title %></h2>
+<h3>By: <%= @post.author.name %></h3></br>
+<p><%= @post.content %></p>
+<img src="<%= @post.image_url %>">
+</br>
+<%= link_to 'Edit This Post', edit_post_path %></br>
+<%= link_to 'Delete This Post', post_path, method: :delete %>
+
+<%= form_for @post, url: {action: "yoda"}, method: :get do |f| %>
+<%= f.hidden_field :title, value: @post.title %>
+<%= f.hidden_field :author, value: @post.author.name %>
+<%= f.hidden_field :image_url, value: @post.image_url %>
+<%= f.hidden_field :content, value: @post.content %>
+<%= f.submit 'Yodafy' %> 
+<% end %>
+
+<%= link_to 'See all posts by this author', author_posts_path(@post.author_id) %>

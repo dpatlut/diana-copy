@@ -1,0 +1,35 @@
+.box{
+  height: 100px;
+  width: 100px;
+}
+
+.blue{
+  background-color: blue;
+  width: 50%;
+  height: 150px;
+}
+
+.yellow{
+  background-color: yellow;
+  width: auto;
+}
+
+.orange{
+  background-color: orange;
+  width: 75%;
+  height: 200px;
+}
+
+.pink{
+  background-color: pink;
+  height: 50px;
+}
+
+
+#container{
+  border: 1px solid black;
+  height: 1000px;
+  width: 1000px;
+ }
+
+

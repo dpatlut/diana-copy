@@ -1,0 +1,16 @@
+h1{
+	color: red;
+	font-size: 150%;
+}
+
+.container{
+  width: 400px;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: inline-block;
+  margin: 10px;
+}

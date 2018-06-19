@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS tweeds;
+
+CREATE TABLE tweeds (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, 
+  content VARCHAR(255), 
+  author VARCHAR(255), 
+  upvote INTEGER DEFAULT 0
+);

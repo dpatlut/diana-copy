@@ -1,0 +1,19 @@
+{
+  "groceries": [
+    {
+      "id": 1,
+      "name": "peaches",
+      "category": "fruit"
+    },
+    {
+      "name": "Lemons",
+      "category": "fruit",
+      "id": 2
+    },
+    {
+      "name": "pears",
+      "category": "fruit",
+      "id": 3
+    }
+  ]
+}

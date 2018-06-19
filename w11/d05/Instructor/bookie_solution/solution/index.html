@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countries</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.3/semantic.css">
+</head>
+<body>
+
+  <main class="ui page two column centered grid">
+    <section class="column wide centered" data-section="debts">
+      <h2>Who owes me?</h2>
+      <table class="ui table celled striped">
+        <thead>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Actions</th>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <a class="ui label blue">
+        <i class="plus icon"></i> Add new...
+      </a>
+    </section>
+
+    <section class="column" data-section="summary">
+
+    </section>
+  </main>
+
+  <script type="text/template" data-template="debt">
+    <td data-attr='client_name' contenteditable='true' >
+      <%= client_name %>
+    </td>
+    <td >
+      <i class='icon dollar'></i>
+      <span data-attr='amount' contenteditable='true'><%= amount %></span>
+    </td>
+    <td>
+      <button data-action='save' class='ui button small green'>Save</button>
+      <button data-action='delete' class='ui button small red'>Iced</button>
+    </td>
+  </script>
+
+  <script type="text/template" data-template="stats">
+    <div class="value">
+      <i class="dollar icon"></i> <%= owed %>
+    </div>
+    <div class="label">
+      Owed
+    </div>
+  </script>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.3/semantic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+  <script type="text/javascript" src="/app.js"></script>
+
+</body>
+</html>

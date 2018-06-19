@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "/css/styles.css">
+  </head>
+  <body>
+    <div>
+    <header>
+      <h1>Update an Item</h1>
+    </header>
+    <div class="lines"></div>
+    <form class = "list" method = "post" action = "/items/<%= item.id %>" >
+      <input type = "hidden" name = "_method" value = "put">
+        <div class = "fields">
+          <label>Item Name</label>
+          <input type = "text" name = "name" value = "<%= item.name %>"><br />
+          <label>Tag</label>
+          <input type = "text" name = "tag" value = "<%= item.tag %>"><br />
+          <button class = "update-button">Update</button>
+        </div>
+    </form>
+    </div>
+  </body>
+</html>

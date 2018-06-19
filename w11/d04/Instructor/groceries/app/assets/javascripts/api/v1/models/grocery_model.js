@@ -1,0 +1,1 @@
+var Grocery = Backbone.Model.extend({})

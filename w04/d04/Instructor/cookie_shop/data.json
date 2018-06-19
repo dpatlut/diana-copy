@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Chocolate Chip",
+        "image": "http://graphics8.nytimes.com/images/2008/07/09/dining/09chip-600.jpg",
+        "quantity": 24  
+    },
+    {
+        "id": 2,
+        "name": "Peanut Butter",
+        "image": "https://allkindsofthingsblog.files.wordpress.com/2013/04/103-150-peanut-butter-cookies-1500x1000.jpg",
+        "quantity": 12
+    },
+    {
+        "id": 3,
+        "name": "Salted Caramel",
+        "quantity": 48,
+        "image": "http://s3.amazonaws.com/gmi-digital-library/98f402d2-179b-4416-920f-b5a9ea9fefb2.jpg"
+    },
+    {
+        "id": 4, 
+        "name": "Oatmeal",
+        "quantity": 36,
+        "image": "https://bakememore.wordpress.com/files/2008/12/white-chocolate-oatmeal-etc.jpg"
+    }
+]

@@ -1,0 +1,29 @@
+ <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<h2>GET with AJAX</h2>
+	<h3>AJAX GET via the OMDB</h3>
+	  Movie Title:<br>
+	  <input type="text" name="title" id ="title-textfield">
+	  <button onclick=movieFunction()>GET via AJAX</button>
+	  <div id="data"></div>
+</body>
+<script>
+function movieFunction(){	
+	var title = document.getElementById("title-textfield").value;
+
+	$.ajax({
+      method: "GET",
+      url: "http://www.omdbapi.com/?t="+title,
+    }).done(function(data) {
+    	console.log(data);
+       var output = "You searched for:<br><h5>"+data.Title+"</h5>";
+       output+="<br>"+data.Plot;
+       output+="<br>"+data.Year+", "+data.Rated+", "+data.Runtime;
+       document.getElementById("data").innerHTML=output;
+    }); 
+}
+</script>
+</html>

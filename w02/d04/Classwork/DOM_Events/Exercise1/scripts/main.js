@@ -1,0 +1,1 @@
+console.log("Connection to main.js works!");

@@ -1,0 +1,35 @@
+<html>
+<head>
+	<style>
+		form {
+		display: inline-block;
+		}
+	</style>
+	</head>
+	<body>
+		<h1>Le Movie Haus de Gerard Von Schtieffel</h1>
+
+		<% Object.keys(movies).forEach(function(key){ %>
+			<h3><a href="/movies/<%= movies[key].id %>"> <%= movies[key].title %></a></h3>
+			<h4>Now Playing:
+			
+			<% movies[key].showtimes.forEach(function(time){ %>
+			<%= time %>  
+			<% }) %>
+			</h4>
+			<form action="/movies/<%= movies[key].id %>/edit" method="GET">
+			<button>Update Movie</button>
+			</form>
+				
+			<form action="/movies/<%= movies[key].id %>?_method=DELETE" method="POST">
+			<button>Delete Movie</button>
+			</form>
+			<% }) %>
+
+		<h2> Want to add a new Movie Mr. Schtieffel?</h2>
+			<form action="/movies" method="POST">
+			<input type="text" name= "title" placeholder="Enter title to add...">
+			<button>Search for Movie</button>
+			</form>	
+		</body>
+</html>

@@ -1,0 +1,30 @@
+<h4>Have An Account? Login...</h4>
+
+<p style="color: red"><%= flash[:error] %></p>
+
+<%= form_tag(sessions_path) do %>
+<%= text_field_tag :name, nil, placeholder: 'Enter Name' %></br>
+<%= password_field_tag :password, nil, placeholder: 'Password' %></br>
+<%= button_tag('Login') %>
+<% end %>
+
+<h4>Sign Up Now!!!</h4>
+
+ <% if @author.errors.any? %>
+        <div id="error-explanation">
+          <p><%= pluralize(@author.errors.count, "error")%> prohibited this user from being saved:</p>
+          <ul>
+          <% @author.errors.full_messages.each do |message| %>
+          <li style="color: red"><%= message %></li>
+          <% end %>
+        </ul>
+        </div>
+        <% end %>
+
+      <%= form_for @author do |f| %>
+      <%= f.text_field :name, placeholder: 'Name' %></br>
+      <%= f.text_field :email, placeholder: 'Email' %></br>
+      <%= f.password_field :password, placeholder: 'Password' %></br>
+      <%= f.password_field :password_confirmation, placeholder: 'Password Confirmation' %></br>
+      <%= f.button 'Signup' %>
+      <% end %>	

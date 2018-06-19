@@ -1,0 +1,6 @@
+# The gemfile keeps track of all the gems that are required to run this app. Run 'bundle install' to make sure that all the appropriate gems are installed. 
+
+source 'https://rubygems.org'
+
+gem 'activerecord'
+gem 'pg'

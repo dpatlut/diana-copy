@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Grocery List</title>
+</head>
+<body>
+	
+  <h4><a href="#groceries">Groceries</a></h4>
+
+	<ul id="grocery-list">
+	</ul>
+
+	<div id="add-grocery-form">
+			<input id="new-grocery-name" type="text">
+			<button id="add-new-grocery">Add</button>
+	</div>
+
+	<script type="text/template" id="grocery-template">
+		<span class="grocery">
+    <a href="#groceries/<%= grocery.id %>"><%= grocery.name %></a>
+			<button class="edit-grocery">Edit</button>
+			<button class="delete-grocery">Delete</button>
+		</span>
+
+		<span class="edit-form" style="display: none">
+      <input type="text" id="<%= grocery.id %>" value="<%= grocery.name %>"> 
+      <button class="update-grocery">Update</button>
+    </span>	
+
+	</script>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.2/backbone.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/model.js"></script>
+    <script src="scripts/collection.js"></script>
+    <script src="scripts/view.js"></script>
+    <script src="scripts/router.js"></script>
+</body>
+</html>

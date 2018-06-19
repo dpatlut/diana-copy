@@ -1,0 +1,15 @@
+## Exercises
+
+### In Between
+
+1. Write a program that prompts the user for a number and outputs the sum of all the numbers from 1 to the chosen number.
+
+### Sum It Up
+
+2. Prompt the user to enter a sequence of positive integers, one at a time. The user enters 'quit' to quit. Print the sum of the positive integers.
+
+### Write a Poem:
+
+  1. Prompt the user for a line.
+  2. Add the line to your Poem
+  3. When the user types 'Fin', Print out your poem

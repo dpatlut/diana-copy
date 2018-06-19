@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS groceries;
+ 
+CREATE TABLE groceries (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT
+);

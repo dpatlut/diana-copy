@@ -1,0 +1,53 @@
+<html>
+<head>
+</head>
+<body>
+<h2>Form without AJAX</h2>
+<form action="http://localhost:3000/posts" method="post">
+  Title:<br>
+  <input type="text" name="title">
+  <br>
+  Author:<br>
+  <input type="text" name="author">
+  <button>Submit</button>
+</form>
+<h2>Forms with AJAX</h2>
+<table>
+  <tr>
+    <td id='ajax-post'>
+    <h3>AJAX POST</h3>
+      Title:<input type="text" id ="post-title-textfield">
+      <br>
+      Author:<input type="text" id ="post-author-textfield">
+      <br>
+      <button id="post-button">POST via AJAX</button>
+    </td>
+    <td id='ajax-put'>
+    <h3>AJAX PUT</h3>
+      ID:<input type="text" id ="put-id-textfield">
+      <br>
+      Title:<input type="text" id ="put-title-textfield">
+      <br>
+      Author:<input type="text" id ="put-author-textfield">
+      <br>
+      <button id="put-button">PUT via AJAX</button>
+    </td>
+    <td id='ajax-delete'>
+    <h3>AJAX DELETE</h3>
+      id:<input type="text" name="id" id ="delete-id-textfield">
+      <br>
+      <br>
+      <br>
+      <button id="delete-button">DELETE via AJAX</button>
+    </td>
+  </tr>
+ </table>
+
+   <div id="data"></div>
+
+   <h2> Entire DB so far:</h2>
+   <div id="entire-db"></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src ="scripts.js"></script>
+</html>

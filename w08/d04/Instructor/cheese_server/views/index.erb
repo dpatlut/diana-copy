@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "/css/styles.css">
+  </head>
+  <body>
+    <div>
+    <header>
+      <h1>Cheeses I like:</h1>
+    </header>
+    <div class="lines"></div>
+    <ul class = "list">
+    <% cheeses.each do |cheese| %>
+      <li>
+     Cheese: <%= cheese.name %>
+     Sharpness: <%= cheese.sharpness %>
+    Added at:<%= cheese.created_at %>
+      </li>
+    <% end %>
+    </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+	<body>
+		<h3>Update <%= wine.wineName %>:</h3>
+		<form action="/wines/<%= wine.id %>?_method=PUT" method="POST">
+			<input type="text" name="wineName" value="<%= wine.wineName %>">
+			<input type="text" name="type" value="<%= wine.type %>">
+			<button>Update Wine</button>
+		</form>
+	</body>
+</html>

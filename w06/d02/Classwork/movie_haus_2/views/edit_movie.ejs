@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<h1>Le Movie Haus de Gerard Von Schtieffel</h1>
+		<br>
+		<h2>Update <%= movie.title %></h2>
+		<img src='<%= movie.poster %>' height="200" width ="150"></img>
+
+		<form action="/movies/<%= movie.id %>?_method=PUT" method="POST">
+		<ol>
+		<% Object.keys(movie).forEach(function(key){ %>
+			<li><%=key%>: <input type="text" name="<%=key%>" value="<%= movie[key] %>">
+			</li>
+		<% }); %>
+		</ol>
+			<button>Update Movie</button>
+		</form>
+	</body>
+</html>

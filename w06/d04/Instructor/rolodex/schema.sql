@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS contacts;
+CREATE TABLE contacts (
+  id INTEGER PRIMARY KEY autoincrement,
+  name TEXT, 
+  phone INTEGER,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

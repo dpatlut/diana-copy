@@ -1,0 +1,10 @@
+<%= form_for @post do |f| %>
+    <%= f.label :title, 'Title' %>
+    <%= f.text_field :title, placeholder: 'Title' %><br>
+    <%= f.hidden_field :author_id, value: session[:author_id] %>
+    <%= f.label :content, 'Content' %>
+    <%= f.text_field :content, placeholder: 'Content', class: 'content-box' %><br>
+    <%= f.label :image_url, 'Image' %>
+    <%= f.text_field :image_url, placeholder: 'Image URL' %><br>
+    <%= f.submit %>
+<% end %>
